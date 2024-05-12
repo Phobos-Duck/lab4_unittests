@@ -4,7 +4,6 @@ from app import app
 class TestApp(unittest.TestCase):
     def setUp(self):
         self.app = app.test_client()
-        self.base_url = 'http://127.0.0.1:5000'
 
     def test_main_page(self):
         response = self.app.get('/')
